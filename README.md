@@ -1,14 +1,20 @@
-file list:
+file list-
 ------------
 
-
-1.node_info.java				            |		node header (Inner class)
-2.weighted_graph.java		    	    	|		weighted graph header
-3.weighted_graph_algorithms.java		|		weighted graph algorithms header
-4.WGraph_DS.java			            	|		weighted graph and node implementations
-5.WGraph_Algo.java			          	|		weighted graph algorithms implementation
-6.WGraph_AlgoTest.java			      	|		test file for WGraph_Algo
-7.WGraph_DSTest.java				        |		test file for WGraph_DS
+1) node_info.java	
+		node header (Inner class)
+2) weighted_graph.java
+		weighted graph header
+3) weighted_graph_algorithms.java
+		weighted graph algorithms header
+4) WGraph_DS.java
+		weighted graph and node implementations
+5) WGraph_Algo.java
+		weighted graph algorithms implementation
+6) WGraph_AlgoTest.java
+		test file for WGraph_Algo
+7) WGraph_DSTest.java
+		test file for WGraph_DS
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
