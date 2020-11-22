@@ -40,7 +40,7 @@ Design -
 		<node> <neighbour> <weight>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Implementations - 
+Classes - 
 
 	1. WGraph_DS:
 		The purpose of the class WGraph_DS is to implement a weighted and undirected graph.
