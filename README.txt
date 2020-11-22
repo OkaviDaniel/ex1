@@ -1,7 +1,7 @@
 file list-
 
 	1) node_info.java	
-		node header (Inner class)
+		node header
 	2) weighted_graph.java
 		weighted graph header
 	3) weighted_graph_algorithms.java
