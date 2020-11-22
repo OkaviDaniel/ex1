@@ -21,22 +21,23 @@ About -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Design - 
 
-		# The code itself written with a lot of "if-else" statements to prevent errors.
+	# The code itself written with a lot of "if-else" statements to prevent errors.
     
-		# The first half of the code(in the implementations) are the implements of the interfaces.    
-			 And the second half of the code are implements of algorithms and helpful methods. (for example : restoreNodes() , visitedAll() and more)
+	# The first half of the code(in the implementations) are the implements of the interfaces.    
+			 And the second half of the code are implements of algorithms
+			 and helpful methods. (for example : restoreNodes() , visitedAll() and more)
       
-		# There are notes on the code that describes in short the functions and their meanings.
+	# There are notes on the code that describes in short the functions and their meanings.
     
-		# Also there is an Inner class inside WGraph_DS class called: NodeData.
+	# Also there is an Inner class inside WGraph_DS class called: NodeData.
     
-		# Print format:
-				<node> <neighbour> <weight>
-				.
-				.
-				.
-				.
-				<node> <neighbour> <weight>
+	# Print format:
+		<node> <neighbour> <weight>
+		.
+		.
+		.
+		.
+		<node> <neighbour> <weight>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Implementations - 
