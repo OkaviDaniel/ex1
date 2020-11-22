@@ -49,9 +49,11 @@ Implementations -
 			   # nodesOnTheGraph
 			   # neighbors
 			   # edges
+			   
 		The HashMap data structure help us to achive time complexity of O(1) of getting
 		a node from the graph or getting a collection of neighbors nodes or getting
 		the weight of a specific edge.
+		
 		The implemenation:
 			nodesOnTheGraph    HashMap<Integer, node_info>
 					       	     ^		^
@@ -72,48 +74,62 @@ Implementations -
 					      of the		  on this HashMap are
 				              current node.	  neighbors of the current node
 						                 and point to the weight of the edge.
+								 
 	      Static variables:
               	nodeCounter - It is an index for creating a new vertex with the default constructor.
               	nodeTaken   - The data structure to place all the taken nodes.
+		
 		
              (TC = time complexity)				
 	     Functions:																						
 	        setNumOfEdges(int a) 			|  Set the number of edges on the graph to be equals to a.       
 								TC: O(1)
+								
 		getNode(int key)		        |  Returns the node associated with that key.		
 								TC: O(1)
+								
 		getNi(int key) 			        |  Returns a collection of neighbors nodes of node key. 
 								TC: O(1)
+								
 		hasEdge(int a, int b)		        |  Returns true if and only if there is an edge between 
-											      node a and node b.
+							   node a and node b.
 								TC: O(1)
+								
 		getEdge(int a , int b)			|  If there is an edge between node a and node b returns
-										    the weight ,else returns -1.
+							   the weight ,else returns -1.
 								TC: O(1)
+								
 		addNode(int key)			|  If there is no node with that key on the graph add it.        				
 							 In addition we need a data structor that will hold the                      
-							          nodes,  because every node have a unique key. 				       
+							 nodes,  because every node have a unique key. 				       
 							 Therfore we use HashMap variable called NodesTaken 
-							              that contains all the nodes that created.
+							 that contains all the nodes that created.
 								TC: O(1)
+								
 		connect(int a, int b, double c)	        |  Connect two nodes on the graph, if they are already
-									        connected - update the weight.
+							   connected - update the weight.
 								TC: O(1)
+								
 		getV()					|  Returns a collection of all the nodes on the graph. 
 								TC: O(1)
+								
 		getV(int a)				|  Same as getNi.                                                  
 								TC: O(1)
+								
 		removeNode(int a)			|  Remove the node that associated with key a from the
-									     graph and all the connected edges.
+							   graph and all the connected edges.
                                                                 TC: O(|E|) , when E is the number  of
-								neighbors edges.
+									     neighbors edges.
                                                                                                                                                
 		removeEdge(int a, int b)		|  Remove the edge between node a and node b.      
 								TC: O(1)
+								
 		nodeSize() 				|  Returns the number of nodes on the graph.       
 								TC: O(1)
+								
 		edgeSize()				|  Returns the number of edges on the graph.       
 								TC: O(1)
+								
 		getMC()					|  Returns the number of operations on the graph.        
 								TC: O(1)
 		
@@ -134,51 +150,85 @@ Implementations -
 			 the nodeCounter until there is an available key.
 		   2) Constructor with value
                     Create a new node with a specific key
+		    
 		Functions:
 			setPrevd(NodeData k)		| Set k as the previous node of the current node                                         
 								TC: O(1)
+								
 			getPrevd()			| Returns the previous node of the current node                                          
 								TC: O(1)
+								
 			getKey() 			| Returns the key value of the current node                                              
 								TC: O(1)
+								
 			getInfo()			| Returns the info of the current node                                                   
 								TC: O(1)
+								
 			setInfo(String s) 		| Set the info of the current node to be s                                              
 								TC: O(1)
+								
 			getTag()			| Returns the tag of the current node                                                    
 								TC: O(1)
+								
 			setTag(double b)		| Set the tag of the current node to be b                                               
 								TC: O(1)
+								
 							
 	3. WGraph_Algo:
-		The purpose of the class WGraph_Algo is to implement a set pf algorithms on weighted and undirected graph.
+		The purpose of the class WGraph_Algo is to implement a set pf algorithms
+		On weighted and undirected graph.
+		
 		Functions:
-			init(weighted_graph a)	        | Init the graph on which this set of algorithms operates on.   TC: O(1)
-			getGraph()			| Returns the current initialized graph    TC: O(1)
-			copy()				| Deep copy of the current graph	  TC: O(1)
+			init(weighted_graph a)	        | Init the graph on which this set of algorithms operates on
+								TC: O(1)
+								
+			getGraph()			| Returns the current initialized graph
+								TC: O(1)
+								
+			copy()				| Deep copy of the current graph
                                                           Because every vertex is unique there is one copy of each node.
-			isConnected()			| Returns true if and only if there is a route from any vertex to al the other vertices
-							     	Algorith used: BFS algorithm.      TC: O(|V|+|E|)
-			shortestPathDist(int a, int b) 	| Returns the shortest path (double) of the two vertices, -1 if there is no path.
-							Algorith used: Dijkstra's algorithm.                                TC: O(N^2)
-			shortestPath(int a, int b)	| Returns a list of nodes that creates the shortest path.                   TC: O(N^2)
-			save(String a)			| Save the current graph on the disk.                                       
+							  	TC: O(1)
+								
+			isConnected()			| Returns true if and only if there is a route from any
+							  Vertex to al the other vertices
+							     	Algorith used: BFS algorithm.
+								TC: O(|V|+|E|)
+								
+			shortestPathDist(int a, int b) 	| Returns the shortest path (double) of the two vertices
+							  If there is no path returns -1.
+								Algorith used: Dijkstra's algorithm.
+								TC: O(N^2)
+								
+			shortestPath(int a, int b)	| Returns a list of nodes that creates the shortest path. 
+								TC: O(N^2)
+								
+			save(String a)			| Save the current graph on the disk.     
+			
 			load(String)			| Load a graph  from the disk.
+			
 			bfs(node_info src)		| Implementation of Breadth first search algorithm.
-							  Implemented with queue, If the graph is connected then the algorithm visit:
-								all the vertices on the graph = N.
-								all the edges on the graph    = E.
+							  Implemented with queue, If the graph is connected then
+							  The algorithm visit:
+								All the vertices on the graph = N.
+								All the edges on the graph    = E.
 								Then the time complexity is O(|N| + |E|).
-			restoreNodes()			| Restore the nodes on the graph to their default settings.                 TC: O(|V|+|E|)
-							   Algorith used: BFS algorithm.
-			visitedAll()			| Checking if the bfs algorithm visited all the nodes on the graph.         TC: O(N) , when N is the number of
-                                                                                                                                              vertices on the graph
-                                                                                                                                              (N=V)
+								
+			restoreNodes()			| Restore the nodes on the graph to their default settings.						
+							  Algorith used: BFS algorithm.
+							   	TC: O(|V|+|E|)
+								
+			visitedAll()			| Checking if the bfs algorithm visited all the 
+							  Nodes on the graph.
+							  	TC: O(N) , when N is the number of
+                                                                           vertices on the graph
+                                                                           (N=V)
+									   
 			dijkstra(node_info src, node_info dest)	| Implementation of dijkstra algorithm.
-								Implemented with queue, In the worst case all the nodes are connected,
-								then there will be N nodes on the queue, 
-								and every dequeue the algorithm make (N-1) operations.
-								Then the time complexity is O(N^2).
+								  Implemented with queue, In the worst case
+								  All the nodes are connected,
+								  Then there will be N nodes on the queue, 
+								   And every dequeue the algorithm make (N-1) operations.
+								   Then the time complexity is O(N^2).
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 How to use-
