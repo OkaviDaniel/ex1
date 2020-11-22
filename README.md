@@ -80,7 +80,7 @@ Classes -
               	nodeTaken   - The data structure to place all the taken nodes.
 		
 		
-             (TC = time complexity)				
+            						 (TC = time complexity)				
 	     Functions:																						
 	        setNumOfEdges(int a) 			|  Set the number of edges on the graph to be equals to a.       
 								TC: O(1)
