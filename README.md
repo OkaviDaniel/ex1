@@ -155,25 +155,30 @@ Implementations -
 
 How to use-
 
-		First create a graph:
-				$		WGraph_DS g = new WGraph_DS();
-		Add some nodes:
-				$		g.add(5);
-				$		g.add(3);
-		The output of this graph will be:
+	First create a graph:
+		$ WGraph_DS g = new WGraph_DS();
+		
+	Add some nodes:
+		$ g.add(5);
+		$ g.add(3);
+		
+	The output of this graph will be:
 				                              		3
 		                              				5
-		Let's connect the two vertices:
-				$		g.connect(3,5, 14.215);
-		And now the output of the graph will be:
+	Let's connect the two vertices:
+		$ g.connect(3,5, 14.215);
+		
+	And now the output of the graph will be:
 				                              		3 5 14.215
 					                              	5 3 14.215
-		To be able to use the algorithms we
-  		need to create a new WGraph_Algo object:
-				$		WGraph_Algo ga = new WGraph_Algo();
-		Then we must init the graph we want to operate on:
-				$		ga.init(g);
-		An example of using a simple method:
-				$		System.out.println(ga.isConnected());
-		Output:
+	To be able to use the algorithms we
+  	need to create a new WGraph_Algo object:
+		$ WGraph_Algo ga = new WGraph_Algo();
+		
+	Then we must init the graph we want to operate on:
+		$ ga.init(g);
+		
+	An example of using a simple method:
+		$ System.out.println(ga.isConnected());
+	Output:
 			                              			true
