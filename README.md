@@ -42,28 +42,28 @@ Design -
 
 Implementations - 
 
-		1. WGraph_DS:
-					The purpose of the class WGraph_DS is to implement a weighted and undirected graph.
-					To be able to have different edges, nodes and neighbors on each graph,
-						every graph have the following variables:
-						   # nodesOnTheGraph
-					     # neighbors
-					     # edges
-					The HashMap data structure help us to achive time complexity of O(1) of getting
-						a node from the graph or getting a collection of neighbors nodes or getting
-						the weight of a specific edge.
-						The implemenation:
-							nodesOnTheGraph -  				      HashMap<Integer, node_info>
-													                                 ^		^
-													                                 |		|
-										                          			key value.	Node object.
+	1. WGraph_DS:
+		The purpose of the class WGraph_DS is to implement a weighted and undirected graph.
+		To be able to have different edges, nodes and neighbors on each graph,
+		every graph have the following variables:
+			   # nodesOnTheGraph
+			   # neighbors
+			   # edges
+		The HashMap data structure help us to achive time complexity of O(1) of getting
+		a node from the graph or getting a collection of neighbors nodes or getting
+		the weight of a specific edge.
+		The implemenation:
+			nodesOnTheGraph    HashMap<Integer, node_info>
+					       	     ^		^
+					             |		|
+					          key value.	Node object.
 													
-							neighbors      -			        	HashMap<Integer, Collection<node_info>>
-											                                  ^           ^
-                                                        |           |
-													                            Key value 		Collection of
-													                            of the 			  all the neighbors 
-													                            current node.		nodes.
+			neighbors      	   HashMap<Integer, Collection<node_info>>
+						      ^           ^
+                                                      |           |
+					      Key value 	  Collection of
+					      of the 		  all the neighbors 
+					     current node.	  nodes.
 													
 							edges		- 		                 		HashMap<Integer, HashMap<Integer,Double>>
 													                                	^			^
