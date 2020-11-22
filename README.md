@@ -186,7 +186,8 @@ Classes -
 								TC: O(1)
 								
 			copy()				| Deep copy of the current graph
-                                                          Because every vertex is unique there is one copy of each node.
+                                                          Because every vertex is unique there is 
+							  one copy of each node.
 							  	TC: O(1)
 								
 			isConnected()			| Returns true if and only if there is a route from any
@@ -213,7 +214,8 @@ Classes -
 								All the edges on the graph    = E.
 								Then the time complexity is O(|N| + |E|).
 								
-			restoreNodes()			| Restore the nodes on the graph to their default settings.						
+			restoreNodes()			| Restore the nodes on the graph to
+						          Their default settings.						
 							  Algorith used: BFS algorithm.
 							   	TC: O(|V|+|E|)
 								
@@ -227,8 +229,9 @@ Classes -
 								  Implemented with queue, In the worst case
 								  All the nodes are connected,
 								  Then there will be N nodes on the queue, 
-								   And every dequeue the algorithm make (N-1) operations.
-								   Then the time complexity is O(N^2).
+								  And every dequeue the algorithm 
+								  make (N-1) operations.
+								  Then the time complexity is O(N^2).
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 How to use-
