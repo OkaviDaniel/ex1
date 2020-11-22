@@ -78,25 +78,39 @@ Implementations -
 		
              (TC = time complexity)				
 	     Functions:																						
-	        setNumOfEdges(int a) 			|  Set the number of edges on the graph to be equals to a.                            TC: O(1)
-		getNode(int key)		        |  Returns the node associated with that key.			                      TC: O(1)
-		getNi(int key) 			        |  Returns a collection of neighbors nodes of node key.                               TC: O(1)
-		hasEdge(int a, int b)		        |  Returns true if and only if there is an edge between node a and node b             TC: O(1)
-		getEdge(int a , int b)			|  If there is an edge between node a and node b returns the weight, else returns -1. TC: O(1)
-		addNode(int key)			|  If there is no node with that key on the graph - add it.                           TC: O(1)
-							 In addition we need a data structor that will hold the nodes,                        TC: O(1)
-							 Because every node have a unique key.                                        
+	        setNumOfEdges(int a) 			|  Set the number of edges on the graph to be equals to a.       
+								TC: O(1)
+		getNode(int key)		        |  Returns the node associated with that key.		
+								TC: O(1)
+		getNi(int key) 			        |  Returns a collection of neighbors nodes of node key. 
+								TC: O(1)
+		hasEdge(int a, int b)		        |  Returns true if and only if there is an edge between node a and node b 
+								TC: O(1)
+		getEdge(int a , int b)			|  If there is an edge between node a and node b returns the weight,
+								else returns -1. TC: O(1)
+		addNode(int key)			|  If there is no node with that key on the graph - add it.        
+								TC: O(1)
+							 In addition we need a data structor that will hold the nodes,                       
+							 Because every node have a unique key. 				       
 							 Therfore we use HashMap called NodesTaken that contain all the nodes that created.
-		connect(int a, int b, double c)	        |  Connect two nodes on the graph, if they are already connected - update the weight. TC: O(1)
-		getV()					|  Returns a collection of all the nodes on the graph.                                TC: O(1)
-		getV(int a)				|  Same as getNi.                                                                     TC: O(1)
+							 	 TC: O(1)  
+		connect(int a, int b, double c)	        |  Connect two nodes on the graph, if they are already connected - update the weight.
+								TC: O(1)
+		getV()					|  Returns a collection of all the nodes on the graph. 
+								TC: O(1)
+		getV(int a)				|  Same as getNi.                                                  
+								TC: O(1)
 		removeNode(int a)			|  Remove the node that associated with key a from the graph and all the connected edges.
                                                                                              TC: O(|E|) , when E is the number  of neighbors edges.
                                                                                                                                                
-		removeEdge(int a, int b)		|  Remove the edge between node a and node b.                                         TC: O(1)
-		nodeSize() 				|  Returns the number of nodes on the graph.                                          TC: O(1)
-		edgeSize()				|  Returns the number of edges on the graph.                                          TC: O(1)
-		getMC()					|  Returns the number of operations on the graph.                                     TC: O(1)
+		removeEdge(int a, int b)		|  Remove the edge between node a and node b.      
+								TC: O(1)
+		nodeSize() 				|  Returns the number of nodes on the graph.       
+								TC: O(1)
+		edgeSize()				|  Returns the number of edges on the graph.       
+								TC: O(1)
+		getMC()					|  Returns the number of operations on the graph.        
+								TC: O(1)
 		
     
 	2. NodeData:
