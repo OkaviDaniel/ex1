@@ -1,26 +1,23 @@
 file list-
-------------
 
-1) node_info.java	
+	1) node_info.java	
 		node header (Inner class)
-2) weighted_graph.java
+	2) weighted_graph.java
 		weighted graph header
-3) weighted_graph_algorithms.java
+	3) weighted_graph_algorithms.java
 		weighted graph algorithms header
-4) WGraph_DS.java
+	4) WGraph_DS.java
 		weighted graph and node implementations
-5) WGraph_Algo.java
+	5) WGraph_Algo.java
 		weighted graph algorithms implementation
-6) WGraph_AlgoTest.java
+	6) WGraph_AlgoTest.java
 		test file for WGraph_Algo
-7) WGraph_DSTest.java
+	7) WGraph_DSTest.java
 		test file for WGraph_DS
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 About - 
-      Assignment number 1 (ex1) in object oriented programming - implementation of a weighted (and undirected graph) and set of algorithms.   
-      
+
+      Assignment number 1 (ex1) in object oriented programming - implementation of a weighted (and undirected graph) and set of algorithms.         
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Design - 
 
@@ -156,7 +153,8 @@ Implementations -
 														                            	Then the time complexity is O(N^2).
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-How to use:
+How to use-
+
 		First create a graph:
 				$		WGraph_DS g = new WGraph_DS();
 		Add some nodes:
@@ -171,7 +169,7 @@ How to use:
 				                              		3 5 14.215
 					                              	5 3 14.215
 		To be able to use the algorithms we
-    need to create a new WGraph_Algo object:
+  		need to create a new WGraph_Algo object:
 				$		WGraph_Algo ga = new WGraph_Algo();
 		Then we must init the graph we want to operate on:
 				$		ga.init(g);
