@@ -110,8 +110,8 @@ public class WGraph_DS  implements weighted_graph, Serializable {
         if(nodesOnTheGraph.containsKey(node1) &&
            nodesOnTheGraph.containsKey(node2))
         {
-            if(neighbors.get(node1).contains(nodeTaken.get(node2)) &&
-               neighbors.get(node2).contains(nodeTaken.get(node1)))
+            if(neighbors.get(node1).contains(nodesOnTheGraph.get(node2)) &&
+               neighbors.get(node2).contains(nodesOnTheGraph.get(node1)))
             {
                 return true;
             }
@@ -188,7 +188,8 @@ public class WGraph_DS  implements weighted_graph, Serializable {
             // return the node
             else
             {
-            	nodesOnTheGraph.put(key,nodeTaken.get(key));
+            	node_info temp = new NodeData((NodeData)nodeTaken.get(key));
+            	nodesOnTheGraph.put(key,temp);
             	edges.put(key, new HashMap<Integer,Double>());
                 neighbors.put(key, new LinkedList<node_info>());               
                 mcCounter++;
@@ -379,7 +380,7 @@ public class WGraph_DS  implements weighted_graph, Serializable {
         public NodeData()
         {
         	// If the there is already a vertex with that key
-        	if(nodeTaken.containsKey(nodeCounter))
+        	if(nodeTaken.keySet().contains(nodeCounter))
         	{
         		while(nodeTaken.containsKey(nodeCounter)==true) 
         		{
@@ -405,6 +406,14 @@ public class WGraph_DS  implements weighted_graph, Serializable {
             tag = Double.POSITIVE_INFINITY;;
         }
         
+        public NodeData(NodeData a)
+        {
+        	
+        	this.key = a.getKey();
+        	this.info = a.getInfo();
+        	this.tag = a.getTag();
+        	this.prevd = a.getPrevd();
+        }
         /**
          * Set node k as the previous of the current node
          * @param k		The given node
